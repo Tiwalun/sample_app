@@ -8,8 +8,8 @@
 /.bundle
 
 # Ignore bundler bin stubs
-
 /bundler_stubs
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
