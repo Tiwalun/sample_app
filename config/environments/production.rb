@@ -67,3 +67,4 @@ SampleApp::Application.configure do
 
   # Needed to compile blueprint.css for heroku
   config.assets.precompile += %w( blueprint/screen.css blueprint/print.css blueprint/ie.css)
+end
