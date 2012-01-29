@@ -1,7 +1,7 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-guard 'spork', :rspec_env => { 'RAILS_ENV' => 'test' } do
+guard 'spork', :wait => 120, :rspec_env => { 'RAILS_ENV' => 'test' } do
   watch('config/application.rb')
   watch('config/environment.rb')
   watch(%r{^config/environments/.+\.rb$})
@@ -28,7 +28,7 @@ guard 'rspec', :version => 2, :all_after_pass => false, :cli => '--drb' do
       "spec/acceptance/#{m[1]}_spec.rb",
       "spec/requests/#{m[1]}_spec.rb"]
   end
-  watch(%r{^app/views/(.+)/}) { |m| "spec/request/#{m[1]}_spec.rb" } 
+  watch(%r{^app/views/(.+)/}) { |m| "spec/requests/#{m[1]}_spec.rb" } 
   watch(%r{^spec/support/(.+)\.rb$})                  { "spec" }
   watch('spec/spec_helper.rb')                        { "spec" }
   watch('config/routes.rb')                           { "spec/routing" }
