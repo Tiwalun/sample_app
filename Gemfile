@@ -18,13 +18,15 @@ group :assets do
 end
 
 gem 'jquery-rails', '2.0.0'
-gem 'therubyracer', '~> 0.10.0beta1'
 
 group :test do
   gem 'capybara', '1.1.2'
   gem 'rspec-rails', '2.8.1'
   gem 'rb-inotify', '0.8.8'
   gem 'libnotify', '0.5.9'
+
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '~> 0.9.0.rc'
 end
 
 group :production do
