@@ -16,3 +16,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore Sublime Text Workspace files
+*.sublime-workspace
