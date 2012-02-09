@@ -19,3 +19,6 @@
 
 # Ignore Sublime Text Workspace files
 *.sublime-workspace
+
+# Ignore vim swap files
+*.swp
